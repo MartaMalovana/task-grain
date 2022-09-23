@@ -31,6 +31,9 @@ function loadGrain(levels) {
         if(level >= firstBorder) {
             return;
         };
+        if(level >= lastBorder) {
+            return;
+        };
         let controlElement = firstBorder;
         if(lastBorder < firstBorder) {
             controlElement = lastBorder;
@@ -49,5 +52,4 @@ loadGrain([2, 0, 1, 5, 2, 7]); // 6
 loadGrain([2, 4, 2]); // 0
 loadGrain([7, 4]); // 0
 loadGrain([]); // 0
-
-  
+loadGrain([7,49,19,35,49,6,24,30,4,13,1,10]);
